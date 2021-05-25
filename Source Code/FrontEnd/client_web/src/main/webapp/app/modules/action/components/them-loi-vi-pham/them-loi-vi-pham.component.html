@@ -1,0 +1,20 @@
+<jhi-component-layout [loadFlag]="!loadFlag" [size]="'medium'" id="insert-loi-vi-pham" [hasFooter]="false">
+  <div class="title-component" *ngIf="!done">Chọn lỗi vi phạm</div>
+  <div class="add-vipham-container content-component">
+    <form class="add-vipham-form" *ngIf="!done">
+      <div *ngFor="let item of loiViPham; let i = index">
+        <label for="nloivipham">lỗi vi phạm {{ i + 1 }}</label>
+        <select [(ngModel)]="loiViPham[i]" name="listLoi" id="listLoi" style="margin-left: 20px">
+          <option *ngFor="let item of listLoi" [value]="item.ID">{{ item.ID }}.{{ item.LoiViPham1 }}</option>
+        </select>
+      </div>
+      <button (click)="insertLoi()" style="margin-left: calc(50% - 50px)">{{ 'submit' | i18n }}</button>
+    </form>
+    <div>
+      <jhi-value-require *ngIf="insertError" [title]="'error.errorTrans.title'" [content]="'error.errorTrans.content'"></jhi-value-require>
+    </div>
+    <div>
+      <jhi-tong-tien *ngIf="done" [id]="idBienBan"></jhi-tong-tien>
+    </div>
+  </div>
+</jhi-component-layout>

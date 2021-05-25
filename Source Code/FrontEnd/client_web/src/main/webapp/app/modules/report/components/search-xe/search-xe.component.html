@@ -1,0 +1,43 @@
+<jhi-component-layout [loadFlag]="false" [size]="'large'" id="search-by-id-xe">
+  <span class="title-component">{{ 'components.searchXe.title' | i18n }}</span>
+  <div class="content-component">
+    <input type="text" [(ngModel)]="idXe" />
+    <button (click)="submit()">{{ 'submit' | i18n }}</button>
+    <div>
+      <jhi-value-require
+        *ngIf="error"
+        [title]="'error.errorValueRequire.title'"
+        [content]="'error.errorValueRequire.content'"
+      ></jhi-value-require>
+    </div>
+    <div>
+      <table>
+        <caption style="margin-bottom: 10px">
+          <strong>{{ 'components.searchXe.content' | i18n }}</strong>
+        </caption>
+        <tr>
+          <th>{{ 'components.searchXe.table.ID' | i18n }}</th>
+          <th>{{ 'components.searchXe.table.VerhicleNumber' | i18n }}</th>
+          <th>{{ 'components.searchXe.table.Money' | i18n }}</th>
+          <th>{{ 'components.searchXe.table.VerhicleType' | i18n }}</th>
+          <th>{{ 'components.searchXe.table.Customer' | i18n }}</th>
+          <th>{{ 'components.searchXe.table.NumberOfFrame' | i18n }}</th>
+          <th>{{ 'components.searchXe.table.NumberOfMachine' | i18n }}</th>
+        </tr>
+        <tr *ngIf="!visible && xe.ID !== 0">
+          <td>{{ xe.ID }}</td>
+          <td>{{ xe.BienSo }}</td>
+          <td>{{ xe.GiaTien }}</td>
+          <td>{{ xe.LoaiXe_id }}</td>
+          <td>{{ xe.NguoiDung_id }}</td>
+          <td>{{ xe.SoKhung }}</td>
+          <td>{{ xe.SoMay }}</td>
+        </tr>
+      </table>
+      <div *ngIf="visible" class="error-not-find">
+        <jhi-value-require [title]="'error.errorSearch.title'" [content]="'error.errorSearch.content'"></jhi-value-require>
+      </div>
+    </div>
+  </div>
+  <span class="footer-component">{{ 'more' | i18n }}</span>
+</jhi-component-layout>

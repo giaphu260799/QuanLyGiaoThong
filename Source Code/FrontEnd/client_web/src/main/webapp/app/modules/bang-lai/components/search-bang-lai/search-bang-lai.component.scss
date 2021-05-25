@@ -1,0 +1,30 @@
+#search-bang-lai {
+  .content-component {
+    margin-left: 1%;
+    input {
+      border: lightgray 1px solid;
+      height: 30px;
+    }
+  }
+  table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 99%;
+    table-layout: fixed;
+    text-align: center;
+    td,
+    th {
+      border: 1px solid #dddddd;
+      padding: 8px;
+      white-space: normal;
+      word-wrap: break-Word;
+    }
+  }
+  .button-gr {
+    margin-top: 10px;
+    position: relative;
+  }
+}
+.center {
+  margin-left: calc((100% - 120px) / 2);
+}

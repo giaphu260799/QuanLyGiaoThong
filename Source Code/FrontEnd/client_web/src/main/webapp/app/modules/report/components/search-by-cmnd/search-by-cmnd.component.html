@@ -1,0 +1,41 @@
+<jhi-component-layout [loadFlag]="false" [size]="'large'" id="search-by-id">
+  <span class="title-component">{{ 'components.searchByCmd.title' | i18n }}</span>
+  <div class="content-component">
+    <input type="text" [(ngModel)]="cmnd" />
+    <button (click)="submit()">{{ 'submit' | i18n }}</button>
+    <div>
+      <jhi-value-require
+        *ngIf="error"
+        [title]="'error.errorValueRequire.title'"
+        [content]="'error.errorValueRequire.content'"
+      ></jhi-value-require>
+    </div>
+    <div>
+      <table>
+        <caption style="margin-bottom: 10px">
+          <strong>{{ 'components.searchByCmd.description' | i18n }}</strong>
+        </caption>
+        <tr>
+          <th>{{ 'components.searchByCmd.table.Id' | i18n }}</th>
+          <th>{{ 'components.searchByCmd.table.Name' | i18n }}</th>
+          <th>{{ 'components.searchByCmd.table.Address' | i18n }}</th>
+          <th>{{ 'components.searchByCmd.table.BirthDate' | i18n }}</th>
+          <th>{{ 'components.searchByCmd.table.Sex' | i18n }}</th>
+          <th>{{ 'components.searchByCmd.table.IdentityCard' | i18n }}</th>
+        </tr>
+        <tr *ngIf="!visible && user.ID !== 0">
+          <td>{{ user.ID }}</td>
+          <td>{{ user.Ten }}</td>
+          <td>{{ user.DiaChi }}</td>
+          <td>{{ user.NgaySinh }}</td>
+          <td>{{ user.GioiTinh }}</td>
+          <td>{{ user.CMND }}</td>
+        </tr>
+      </table>
+      <div *ngIf="visible" class="error-not-find">
+        <jhi-value-require [title]="'error.errorSearch.title'" [content]="'error.errorSearch.content'"></jhi-value-require>
+      </div>
+    </div>
+  </div>
+  <span class="footer-component">{{ 'more' | i18n }}</span>
+</jhi-component-layout>

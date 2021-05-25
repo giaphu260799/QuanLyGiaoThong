@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 104px;
+  padding: 0 20px;
+  background-color: #f2f2f3;
+  box-shadow: 0 3px 3px hsla(0, 0%, 0%, 0.1);
+  @media screen and (min-width: 1024px) {
+    padding-left: max(20px, calc(50% - 720px));
+    padding-right: max(20px, calc(50% - 720px));
+  }
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.logo-center {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.tool-bar {
+  display: flex;
+  padding: 6px 0;
+  @media screen and (min-width: 1024px) {
+    justify-content: flex-end;
+  }
+}
+
+.tool-bar > .menu {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.menu {
+  cursor: pointer;
+  margin-right: auto;
+  img {
+    width: 70px;
+    height: 60px;
+  }
+}
+
+.list-page {
+  display: flex;
+  @media screen and (min-width: 1024px) {
+    margin-left: auto;
+  }
+}
+
+.item {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 3px solid #f2f2f3;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+    padding: 0 16px;
+  }
+  @media screen and (max-width: 1024px) {
+    margin-top: -11px;
+  }
+  @media screen and(max-width: 767px) {
+    margin-top: 0px;
+    p {
+      display: none;
+    }
+  }
+}
+
+.item a {
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+.item p {
+  padding-bottom: 4px;
+  @media screen and (min-width: 1024px) {
+    margin-left: 6px;
+  }
+}
+
+.active {
+  color: #02629f;
+  border-bottom: 3px solid #02629f;
+}
+
+.item:hover {
+  color: #76b2e1;
+  border-bottom: 3px solid #76b2e1;
+}
+
+.divider {
+  border-color: #e5e6e6;
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  height: 2rem;
+  margin: 4px 0;
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.welcome {
+  padding-left: max(20px, calc(50% - 720px));
+  padding-right: max(20px, calc(50% - 720px));
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 20px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  @media screen and (max-width: 767px) {
+    width: 30px;
+    height: 30px;
+  }
+}

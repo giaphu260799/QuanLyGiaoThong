@@ -1,0 +1,15 @@
+<div class="container" [style.background]="backgroundActive">
+    <div class="list" [style.display]="displayList">
+        <div class="item" *ngFor="let item of data.list" (click)="selectItem(item.key)">
+            <div [ngClass]="item.icon"></div>
+            <div [ngClass]="data.id">{{ item.text }}</div>
+        </div>
+    </div>
+    <label class="label-container" for="check-dropdown-{{ data.id }}">
+    <div [ngClass]="data.label.class" [hidden]="data.label.text != '' || data.label.class == ''"></div>
+    <div [hidden]="data.label.text == ''">
+      {{ data.label.text }}
+    </div>
+    <div class="fa fa-sort-down hidden"></div>
+  </label>
+</div>

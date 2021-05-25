@@ -1,0 +1,25 @@
+<jhi-component-layout [loadFlag]="false" [size]="'small'" id="information-account" [hasFooter]="false">
+  <span class="title-component">{{ 'components.profile.title' | i18n }}</span>
+  <div class="content-component">
+    <div>
+      <p>
+        <strong>{{ 'components.profile.information.ID' | i18n }}:</strong>
+      </p>
+      <p>
+        <strong>{{ 'components.profile.information.Name' | i18n }}:</strong>
+      </p>
+      <p>
+        <strong>{{ 'components.profile.information.Rank' | i18n }}:</strong>
+      </p>
+      <p>
+        <strong>{{ 'components.profile.information.Username' | i18n }}:</strong>
+      </p>
+    </div>
+    <div>
+      <p>{{ user.id || 'null' }}</p>
+      <p>{{ user.Ten || 'null' }}</p>
+      <p>{{ user.Bac || 'null' }}</p>
+      <p>{{ user.username || 'null' }}</p>
+    </div>
+  </div>
+</jhi-component-layout>

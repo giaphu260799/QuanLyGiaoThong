@@ -1,0 +1,28 @@
+<div class="container">
+  <form #user="ngForm">
+    <div class="form-group">
+      <div for="username">{{ 'login.username' | i18n }} &#42;</div>
+      <input type="text" name="username" class="form-control" class="input-field" required [(ngModel)]="user_name" #username="ngModel" />
+      <br />
+      <jhi-value-require
+        [title]="'error.errorValueRequire.title'"
+        [content]="'error.errorValueRequire.content'"
+        [hidden]="username.valid || username.pristine"
+      ></jhi-value-require>
+    </div>
+    <div class="form-group">
+      <div for="password">{{ 'login.password' | i18n }} &#42;</div>
+      <input type="password" name="password" class="form-control" class="input-field" required [(ngModel)]="pass_word" #password="ngModel" />
+      <br />
+      <jhi-value-require
+        [title]="'error.errorValueRequire.title'"
+        [content]="'error.errorValueRequire.content'"
+        [hidden]="password.valid || password.pristine"
+      ></jhi-value-require>
+    </div>
+  </form>
+  <button (click)="Login()">{{ 'login.signin' | i18n }}</button>
+  <div>
+    <jhi-value-require [title]="'error.errorLogIn.title'" [content]="'error.errorLogIn.content'" *ngIf="visible"></jhi-value-require>
+  </div>
+</div>

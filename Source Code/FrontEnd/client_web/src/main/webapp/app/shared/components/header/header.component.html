@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="logo-center">
+    <div class="menu" [routerLink]="['/home']">
+      <img src="../../../../content/images/logo.png" alt="logo" />
+    </div>
+  </div>
+  <div class="right-section">
+    <div class="tool-bar">
+      <div class="menu">
+        <img src="../../../../content/images/logo.png" alt="logo" />
+      </div>
+      <jhi-drop-down [data]="languageData" (selected)="changeLocale($event)"></jhi-drop-down>
+      <jhi-drop-down [data]="userData" *ngIf="hasLogin" (selected)="chooseUserOption($event)"></jhi-drop-down>
+    </div>
+    <div class="list-page" *ngIf="hasLogin">
+      <div class="item" [routerLink]="['/home']" routerLinkActive="active">
+        <div class="icon fas fa-home"></div>
+        <p>{{ titleData.all }}</p>
+      </div>
+      <div class="divider"></div>
+      <div class="item" [routerLink]="['/report']" routerLinkActive="active" title="report">
+        <div class="icon fas fa-book"></div>
+        <p>{{ titleData.report }}</p>
+      </div>
+      <div class="item" [routerLink]="['/BangLai']" routerLinkActive="active" title="BangLai">
+        <div class="icon fas fa-id-card"></div>
+        <p>{{ titleData.driver }}</p>
+      </div>
+      <div class="item" [routerLink]="['/Profile']" routerLinkActive="active" title="Profile">
+        <div class="icon fas fa-id-badge"></div>
+        <p>{{ titleData.profile }}</p>
+      </div>
+      <div class="item" [routerLink]="['/action']" routerLinkActive="active" title="action">
+        <div class="icon far fa-hand-paper"></div>
+        <p>{{ titleData.action }}</p>
+      </div>
+    </div>
+    <div class="list-page" *ngIf="!hasLogin">
+      <div class="item" [routerLink]="['/']" routerLinkActive="active">
+        <div class="icon fas fa-sign-in-alt"></div>
+        <p>{{ titleData.login }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="hasLogin">
+  <p [innerHTML]="'welcome' | translate: { value: userDetails.Ten }" class="welcome"></p>
+</div>

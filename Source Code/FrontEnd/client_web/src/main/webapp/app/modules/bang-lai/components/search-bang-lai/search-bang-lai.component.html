@@ -1,0 +1,54 @@
+<jhi-component-layout [loadFlag]="false" [size]="'large'" id="search-bang-lai">
+  <span class="title-component">{{ 'components.BangLai.title-search' | i18n }}</span>
+  <div class="content-component">
+    <input type="text" [(ngModel)]="soBangLai" />
+    <button class="submit" (click)="submit()">{{ 'submit' | i18n }}</button>
+    <div>
+      <jhi-value-require
+        *ngIf="error"
+        [title]="'error.errorValueRequire.title'"
+        [content]="'error.errorValueRequire.content'"
+      ></jhi-value-require>
+    </div>
+    <div>
+      <table>
+        <caption style="margin-bottom: 10px">
+          <strong>{{ 'components.BangLai.description' | i18n }}</strong>
+        </caption>
+        <tr>
+          <th>{{ 'components.BangLai.table.Id' | i18n }}</th>
+          <th>{{ 'components.BangLai.table.Class' | i18n }}</th>
+          <th>{{ 'components.BangLai.table.Date' | i18n }}</th>
+          <th>{{ 'components.BangLai.table.Customer' | i18n }}</th>
+          <th>{{ 'components.BangLai.table.Location' | i18n }}</th>
+          <th>{{ 'components.BangLai.table.LicenseNumber' | i18n }}</th>
+        </tr>
+        <tr *ngIf="!visible && list.ID !== 0">
+          <td>{{ list.ID }}</td>
+          <td>{{ list.Hang }}</td>
+          <td>{{ list.NgayCap }}</td>
+          <td>{{ list.NguoiDung_id }}</td>
+          <td>{{ list.NoiCap }}</td>
+          <td>{{ list.SoBangLai }}</td>
+        </tr>
+      </table>
+      <div *ngIf="!visible && list.ID !== 0" class="button-gr center">
+        <button class="button-primary" (click)="delete()">{{ 'delete' | i18n }}</button>
+        <button class="button-primary" (click)="update = true">{{ 'update' | i18n }}</button>
+      </div>
+      <div>
+        <jhi-value-require
+          *ngIf="deleteError"
+          [title]="'error.errorTrans.title'"
+          [content]="'error.errorTrans.content'"
+          class="center"
+        ></jhi-value-require>
+      </div>
+      <div *ngIf="visible" class="error-not-find">
+        <jhi-value-require [title]="'error.errorSearch.title'" [content]="'error.errorSearch.content'"></jhi-value-require>
+      </div>
+      <jhi-update-bang-lai *ngIf="update && !visible && list.ID !== 0" [bangLai]="list"></jhi-update-bang-lai>
+    </div>
+  </div>
+  <span class="footer-component">{{ 'more' | i18n }}</span>
+</jhi-component-layout>

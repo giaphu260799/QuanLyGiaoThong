@@ -1,0 +1,32 @@
+.error-alert {
+  background-color: #fcf3f4;
+  border-color: #f8d3d6;
+  padding: 10px;
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+  margin-top: 10px;
+  border-top-width: 0;
+  border-radius: 0;
+  padding: 10px;
+  display: inline-flex;
+}
+.error-descripiton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+.error-name {
+  height: 100%;
+  max-height: 18px;
+  color: black;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.error-instructions {
+  color: rgba(0, 0, 0, 0.8);
+}
+.error-icon {
+  color: red;
+  font-size: 16px;
+}

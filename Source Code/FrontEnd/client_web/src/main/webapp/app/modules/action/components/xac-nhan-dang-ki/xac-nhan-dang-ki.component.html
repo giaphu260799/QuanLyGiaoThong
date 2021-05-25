@@ -1,0 +1,11 @@
+<jhi-component-layout [loadFlag]="!loadFlag" [size]="'large'" id="insert-bang-lai" [hasFooter]="false">
+  <div class="title-component">Xác nhận đăng ký xe</div>
+  <div class="xac-nhan-container content-component">
+    <div *ngFor="let item of list" class="child">
+      <jhi-card-dang-ki [data]="item"></jhi-card-dang-ki>
+    </div>
+    <div *ngIf="!list.length">
+        Không có yêu cầu nào
+    </div>
+  </div>
+</jhi-component-layout>

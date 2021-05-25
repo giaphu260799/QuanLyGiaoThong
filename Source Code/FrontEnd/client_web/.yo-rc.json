@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "homejet_angular"
+    },
+    "jhipsterVersion": "6.10.3",
+    "applicationType": "monolith",
+    "baseName": "homejet_angular",
+    "packageName": "homejet_angular",
+    "packageFolder": "homejet_angular",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "YzFiYWVmMjg5MjliNTM4YTFiZmI0YWNjNzc1N2UyNDRhYWQzODQ4NGM2MjA0Y2JmNTRkYzNmMmYzNjJiYjE4OTFjZTQwMjc5YzEwY2ZhNDNkOTk0ZDQ1MzBiZGRkYzBkYTAyY2I5ZDYyMDNkN2ExMzU5MzcyNDRkM2FkNTU3ZTc=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1603101281125,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "blueprints": [],
+    "languages": ["en", "fr", "de"]
+  }
+}

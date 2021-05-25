@@ -1,0 +1,30 @@
+<jhi-component-layout [loadFlag]="false" [size]="'large'" id="insert-bang-lai" [hasFooter]="false">
+  <div class="title-component">Thêm vi phạm</div>
+  <div class="add-bienbanvipham-container content-component">
+    <form class="add-bienbanvipham-form" *ngIf="!click">
+      <label for="sobanglai">ID bằng lái: </label>
+      <input type="text" id="sobanglai" name="sobanglai" placeholder="Số bằng lái ..." [(ngModel)]="bienBan.BangLai_id" />
+
+      <label for="thoigianvipham">Thời gian vi phạm (date and time):</label>
+      <input type="datetime-local" id="thoigianvipham" name="thoigianvipham" [(ngModel)]="bienBan.ThoiGianViPham" />
+
+      <label for="nloivipham">Số lỗi vi phạm: </label>
+      <input type="number" id="n-loivipham" name="n-loivipham" min="1" max="100" [(ngModel)]="soLoi" />
+      <button (click)="insertBienBan()">Tạo biên bản</button>
+    </form>
+    <div>
+      <jhi-value-require *ngIf="insertError" [title]="'error.errorTrans.title'" [content]="'error.errorTrans.content'"></jhi-value-require>
+    </div>
+    <div>
+      <jhi-value-require
+        *ngIf="error"
+        [title]="'error.errorValueRequire.title'"
+        [content]="'error.errorValueRequire.content'"
+        style="margin-left: calc(50% - 100px)"
+      ></jhi-value-require>
+    </div>
+    <div>
+      <jhi-them-loi-vi-pham *ngIf="soLoi != 0 && !insertError && click" [soLoi]="soLoi" [idBienBan]="id_BienBan"></jhi-them-loi-vi-pham>
+    </div>
+  </div>
+</jhi-component-layout>

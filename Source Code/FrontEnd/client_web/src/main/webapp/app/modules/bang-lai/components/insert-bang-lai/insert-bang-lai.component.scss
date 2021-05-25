@@ -1,0 +1,24 @@
+.content-component {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  form {
+    width: 100%;
+    input {
+      width: 100%;
+    }
+  }
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  div {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    .title {
+      font-weight: bold;
+    }
+  }
+  button {
+    margin-left: calc(50% - 30px);
+    margin-top: 10px;
+  }
+}

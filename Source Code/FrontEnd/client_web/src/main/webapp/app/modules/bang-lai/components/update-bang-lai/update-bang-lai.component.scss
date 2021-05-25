@@ -1,0 +1,15 @@
+.container {
+  margin-top: 20px;
+  width: 100%;
+  padding-left: calc(50% - 120px);
+  div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .title {
+      font-weight: bold;
+    }
+  }
+  button {
+    margin-left: 100px;
+  }
+}

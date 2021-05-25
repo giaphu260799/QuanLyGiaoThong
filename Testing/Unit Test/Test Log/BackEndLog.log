@@ -1,0 +1,103 @@
+Test Name:	addBangLai
+Test FullName:	BackEndUnitTest.Test.BangLaiTest.addBangLai
+Test Source:	C:\Users\Le Van Minh.DESKTOP-G9CMBGS\Desktop\DOAN_PTUNDHD_Test-main\BackEndUnitTest.Test\BangLaiTest.cs : line 37
+Test Outcome:	Passed
+Test Duration:	0:00:02.454
+
+
+Test Name:	deleteBangLai
+Test FullName:	BackEndUnitTest.Test.BangLaiTest.deleteBangLai
+Test Source:	C:\Users\Le Van Minh.DESKTOP-G9CMBGS\Desktop\DOAN_PTUNDHD_Test-main\BackEndUnitTest.Test\BangLaiTest.cs : line 58
+Test Outcome:	Failed
+Test Duration:	0:00:00.217
+
+Result StackTrace:	at BackEndUnitTest.Test.BangLaiTest.deleteBangLai() in C:\Users\Le Van Minh.DESKTOP-G9CMBGS\Desktop\DOAN_PTUNDHD_Test-main\BackEndUnitTest.Test\BangLaiTest.cs:line 61
+Result Message:	
+Expected: True
+  But was:  False
+
+Test Name:	findById
+Test FullName:	BackEndUnitTest.Test.BangLaiTest.findById
+Test Source:	C:\Users\Le Van Minh.DESKTOP-G9CMBGS\Desktop\DOAN_PTUNDHD_Test-main\BackEndUnitTest.Test\BangLaiTest.cs : line 23
+Test Outcome:	Passed
+Test Duration:	0:00:00.093
+
+Test Name:	updateBangLai
+Test FullName:	BackEndUnitTest.Test.BangLaiTest.updateBangLai
+Test Source:	C:\Users\Le Van Minh.DESKTOP-G9CMBGS\Desktop\DOAN_PTUNDHD_Test-main\BackEndUnitTest.Test\BangLaiTest.cs : line 48
+Test Outcome:	Failed
+Test Duration:	0:00:00.0000001
+
+Result Message:	Method is not public
+
+Test Name:	addBienBanViPham
+Test FullName:	BackEndUnitTest.Test.BienBanViPhamTest.addBienBanViPham
+Test Source:	C:\Users\Le Van Minh.DESKTOP-G9CMBGS\Desktop\DOAN_PTUNDHD_Test-main\BackEndUnitTest.Test\BienBanViPhamTest.cs : line 22
+Test Outcome:	Passed
+Test Duration:	0:00:00.19
+
+Test Name:	auth
+Test FullName:	BackEndUnitTest.Test.CanBoTest.auth
+Test Source:	C:\Users\Le Van Minh.DESKTOP-G9CMBGS\Desktop\DOAN_PTUNDHD_Test-main\BackEndUnitTest.Test\CanBoTest.cs : line 21
+Test Outcome:	Passed
+Test Duration:	0:00:00.028
+
+
+Test Name:	doiMatKhau
+Test FullName:	BackEndUnitTest.Test.CanBoTest.doiMatKhau
+Test Source:	C:\Users\Le Van Minh.DESKTOP-G9CMBGS\Desktop\DOAN_PTUNDHD_Test-main\BackEndUnitTest.Test\CanBoTest.cs : line 34
+Test Outcome:	Passed
+Test Duration:	0:00:00.029
+
+
+Test Name:	findAll
+Test FullName:	BackEndUnitTest.Test.LoiViPhamTest.findAll
+Test Source:	C:\Users\Le Van Minh.DESKTOP-G9CMBGS\Desktop\DOAN_PTUNDHD_Test-main\BackEndUnitTest.Test\LoiViPhamTest.cs : line 24
+Test Outcome:	Passed
+Test Duration:	0:00:00.014
+
+Test Name:	doiMatKhau
+Test FullName:	BackEndUnitTest.Test.NguoiDungTest.doiMatKhau
+Test Source:	C:\Users\Le Van Minh.DESKTOP-G9CMBGS\Desktop\DOAN_PTUNDHD_Test-main\BackEndUnitTest.Test\NguoiDungTest.cs : line 70
+Test Outcome:	Passed
+Test Duration:	0:00:00.04
+
+
+Test Name:	findByCMND
+Test FullName:	BackEndUnitTest.Test.NguoiDungTest.findByCMND
+Test Source:	C:\Users\Le Van Minh.DESKTOP-G9CMBGS\Desktop\DOAN_PTUNDHD_Test-main\BackEndUnitTest.Test\NguoiDungTest.cs : line 22
+Test Outcome:	Passed
+Test Duration:	0:00:00.106
+
+
+Test Name:	findByID
+Test FullName:	BackEndUnitTest.Test.NguoiDungTest.findByID
+Test Source:	C:\Users\Le Van Minh.DESKTOP-G9CMBGS\Desktop\DOAN_PTUNDHD_Test-main\BackEndUnitTest.Test\NguoiDungTest.cs : line 39
+Test Outcome:	Passed
+Test Duration:	0:00:00.008
+
+
+Test Name:	nguoiDungAuth
+Test FullName:	BackEndUnitTest.Test.NguoiDungTest.nguoiDungAuth
+Test Source:	C:\Users\Le Van Minh.DESKTOP-G9CMBGS\Desktop\DOAN_PTUNDHD_Test-main\BackEndUnitTest.Test\NguoiDungTest.cs : line 58
+Test Outcome:	Passed
+Test Duration:	0:00:00.014
+
+
+Test Name:	findByBienSo
+Test FullName:	BackEndUnitTest.Test.XeTest.findByBienSo
+Test Source:	C:\Users\Le Van Minh.DESKTOP-G9CMBGS\Desktop\DOAN_PTUNDHD_Test-main\BackEndUnitTest.Test\XeTest.cs : line 40
+Test Outcome:	Passed
+Test Duration:	0:00:00.032
+
+
+Test Name:	findByUserId
+Test FullName:	BackEndUnitTest.Test.XeTest.findByUserId
+Test Source:	C:\Users\Le Van Minh.DESKTOP-G9CMBGS\Desktop\DOAN_PTUNDHD_Test-main\BackEndUnitTest.Test\XeTest.cs : line 24
+Test Outcome:	Passed
+Test Duration:	0:00:00.007
+
+
+
+
+

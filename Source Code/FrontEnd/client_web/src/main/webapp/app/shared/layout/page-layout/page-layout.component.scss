@@ -1,0 +1,22 @@
+.container-page-layout {
+  width: 100%;
+  padding-left: max(20px, calc(50% - 720px)) !important;
+  padding-right: max(20px, calc(50% - 720px)) !important;
+  box-sizing: border-box;
+  .page-layout {
+    border: 1px #dddcdc solid;
+    max-width: 1440px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    #title {
+      border-bottom: 1px #dddcdc solid;
+      padding-bottom: 10px;
+      margin: 20px 10px 0 10px;
+    }
+  }
+  .action {
+    max-width: 720px !important;
+  }
+}

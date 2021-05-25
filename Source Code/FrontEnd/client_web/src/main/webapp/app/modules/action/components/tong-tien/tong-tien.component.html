@@ -1,0 +1,10 @@
+<jhi-component-layout [loadFlag]="!loadFlag" [size]="'medium'" id="insert-loi-vi-pham" [hasFooter]="false">
+  <div class="title-compoent">Hoàn thành</div>
+  <div class="finaladdvipham-container content-component">
+    <form class="finaladdvipham-form">
+      <p><strong>Tổng tiền:</strong> {{ bienBan.TongTien }}</p>
+      <p><strong>Tổng điểm trừ:</strong> {{ bienBan.TongDiemTru }}</p>
+      <button (click)="Back()">Xác nhận</button>
+    </form>
+  </div>
+</jhi-component-layout>

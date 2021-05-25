@@ -1,0 +1,33 @@
+.container {
+  margin-top: 10px;
+  box-shadow: 0 2px 2px 0 hsla(0, 0%, 0%, 0.14), 0 3px 1px -2px hsla(0, 0%, 0%, 0.2), 0 1px 5px 0 hsla(0, 0%, 0%, 0.12);
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+  border: 1px #e5e6e6 solid;
+  overflow: hidden;
+  div {
+    padding: 10px;
+  }
+  #footer {
+    width: 98%;
+    background-color: #e4e8ea;
+    color: #277bc3;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+    margin: 1% 10px 5px 1%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: calc(100% - 40px) !important;
+  }
+}
+
+.uploader-status ::ng-deep .mat-progress-spinner circle,
+.mat-spinner circle {
+  stroke: #277bc3;
+}

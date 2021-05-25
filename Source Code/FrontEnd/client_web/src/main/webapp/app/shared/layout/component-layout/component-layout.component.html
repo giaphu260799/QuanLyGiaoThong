@@ -1,0 +1,12 @@
+<div class="container" [ngStyle]="chooseSize()" *ngIf="visible">
+  <div *ngIf="loadFlag" class="uploader-status" style="margin-left: calc((100% - 105px) / 2)">
+    <mat-spinner diameter="80"></mat-spinner>
+  </div>
+  <div *ngIf="!loadFlag">
+    <span style="font-size: 130%; font-weight: bold;"><ng-content select=".title-component"></ng-content></span>
+  </div>
+  <ng-content id="content" select=".content-component" *ngIf="!loadFlag"></ng-content>
+  <button id="footer" *ngIf="hasFooter">
+    <a><ng-content select=".footer-component"></ng-content></a>
+  </button>
+</div>

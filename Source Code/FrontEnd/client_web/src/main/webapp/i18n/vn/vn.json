@@ -1,0 +1,114 @@
+{
+  "boolean": {
+    "yes": "Có",
+    "no": "Không"
+  },
+  "error": {
+    "errorCodeMessage": "An error occurred ({{value}}). Please retry and contact your Loyco team if it still doesn't work.",
+    "messageFormatValidator": {
+      "messageSummary": "'{{value}}' is not in the expected date format.",
+      "messageDetail": "Enter a value in the same format as this example: '29/11/1998'"
+    },
+    "errorValueRequire": {
+      "title": "Bạn chưa nhập giá trị",
+      "content": "Giá trị không thể trống"
+    },
+    "errorTrans": {
+      "title": "lỗi khi thực hiện tác vụ",
+      "content": "Tác vụ không thành công"
+    },
+    "errorLogIn": {
+      "title": "không thể đăng nhập",
+      "content": "Kiểm tra lại username hoặc password"
+    },
+    "errorSearch": {
+      "title": "không tìm thấy data",
+      "content": "kiểm tra lại thông tin nhập"
+    }
+  },
+  "lang": {
+    "en": "English",
+    "vn": "Vietnamese"
+  },
+  "login": {
+    "password": "Mật khẩu",
+    "signin": "Đăng nhập",
+    "username": "Tài khoản"
+  },
+  "menu": {
+    "changePassword": "Thay đổi mật khẩu",
+    "logout": "Đăng xuất"
+  },
+  "tab": {
+    "all": "Trang chủ",
+    "report": "Báo cáo",
+    "login": "Đăng nhập",
+    "driver": "Bằng lái",
+    "profile": "Tài khoản",
+    "action": "Hành động"
+  },
+  "welcome": "Xin chào {{value}}, rất vui vì bạn trở lại",
+  "components": {
+    "searchByCmd": {
+      "title": "Tìm kiếm người theo cmnd",
+      "description": "thông tin người dùng",
+      "table": {
+        "Id": "ID",
+        "Name": "Tên",
+        "Address": "Địa chỉ",
+        "BirthDate": "Ngày sinh",
+        "Sex": "giới tính",
+        "IdentityCard": "CMND"
+      }
+    },
+    "BangLai": {
+      "title-search": "Tìm kiếm bằng lái",
+      "title-insert": "Thêm bằng lái",
+      "title-update": "Cập nhật bằng lái",
+      "description": "thông tin chi tiết bằng lái",
+      "table": {
+        "Id": "ID",
+        "Class": "Hạng",
+        "Date": "Ngày cấp",
+        "Customer": "người dùng",
+        "Location": "Nơi cấp",
+        "LicenseNumber": "Số bằng lái"
+      }
+    },
+    "profile": {
+      "title": "Thông tin tài khoản",
+      "information": {
+        "ID": "ID",
+        "Name": "Họ tên",
+        "Rank": "Cấp bậc",
+        "Username": "Username"
+      }
+    },
+    "changePassword": {
+      "oldPass": "Password cũ",
+      "newPass": "Password mới",
+      "againPass": "Nhập lại password"
+    },
+    "searchXe": {
+      "title": "Tìm kiếm xe",
+      "content": "thông tin xe",
+      "table": {
+        "ID": "ID",
+        "VerhicleNumber": "Số xe",
+        "Money": "Gía tiền",
+        "VerhicleType": "Loại xe",
+        "Customer": "Khách hàng",
+        "NumberOfFrame": "Số khung",
+        "NumberOfMachine": "Số máy"
+      }
+    }
+  },
+  "more": "Xem thêm",
+  "submit": "Xác nhận",
+  "update": "cập nhật",
+  "delete": "xóa",
+  "insert": "thêm",
+  "save": "Lưu",
+  "cancel": "Hủy",
+  "modify": "Chỉnh sửa"
+}

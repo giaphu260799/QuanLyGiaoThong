@@ -1,0 +1,72 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1821" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\ChangePasswordPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ChiTietBienBanViPhamPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\DangKyPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\DanhSachBienBanViPhamPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\HoaDonPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\ChangePasswordPage.xaml.cs">
+      <DependentUpon>ChangePasswordPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ChiTietYeuCauDangKyXePage.xaml.cs">
+      <DependentUpon>ChiTietYeuCauDangKyXePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ChiTietXePage.xaml.cs">
+      <DependentUpon>ChiTietXePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ChiTietBangLaiPage.xaml.cs">
+      <DependentUpon>ChiTietBangLaiPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\DanhSachDangKyXePage.xaml.cs">
+      <DependentUpon>DanhSachDangKyXePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\DanhSachXePage.xaml.cs">
+      <DependentUpon>DanhSachXePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\DanhSachBangLaiPage.xaml.cs">
+      <DependentUpon>DanhSachBangLaiPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\HoaDonTruocBaPage.xaml.cs">
+      <DependentUpon>HoaDonTruocBaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\InfoPage.xaml.cs">
+      <DependentUpon>InfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

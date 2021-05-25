@@ -1,0 +1,113 @@
+{
+  "boolean": {
+    "yes": "Yes",
+    "no": "No"
+  },
+  "error": {
+    "messageFormatValidator": {
+      "messageSummary": "'{{value}}' is not in the expected date format.",
+      "messageDetail": "Enter a value in the same format as this example: '29/11/1998'"
+    },
+    "errorValueRequire": {
+      "title": "Value is required.",
+      "content": "You must enter a value."
+    },
+    "errorTrans": {
+      "title": "Transaction failed",
+      "content": "Your transaction failed"
+    },
+    "errorLogIn": {
+      "title": "can not access",
+      "content": "check your username or password"
+    },
+    "errorSearch": {
+      "title": "can not find",
+      "content": "check your value"
+    }
+  },
+  "lang": {
+    "en": "English",
+    "vn": "Vietnamese"
+  },
+  "login": {
+    "password": "Password",
+    "signin": "Sign in",
+    "username": "Username"
+  },
+  "menu": {
+    "changePassword": "Change my password",
+    "logout": "Sign out"
+  },
+  "tab": {
+    "all": "Home",
+    "report": "Report",
+    "login": "Login",
+    "driver": "Driver license",
+    "profile": "Profile",
+    "action": "Action"
+  },
+  "welcome": "Hello {{value}}, nice to see you again",
+  "components": {
+    "searchByCmd": {
+      "title": "Search people by ID",
+      "description": "people detail",
+      "table": {
+        "Id": "ID",
+        "Name": "Name",
+        "Address": "Address",
+        "BirthDate": "BirthDate",
+        "Sex": "Sex",
+        "IdentityCard": "IdentityCard"
+      }
+    },
+    "BangLai": {
+      "title-search": "Search license",
+      "title-insert": "Insert license",
+      "title-update": "Update license",
+      "description": "license detail",
+      "table": {
+        "Id": "ID",
+        "Class": "Class",
+        "Date": "Date",
+        "Customer": "Customer",
+        "Location": "Location",
+        "LicenseNumber": "License Number"
+      }
+    },
+    "profile": {
+      "title": "Account information",
+      "information": {
+        "ID": "ID",
+        "Name": "Name",
+        "Rank": "Rank",
+        "Username": "Username"
+      }
+    },
+    "changePassword": {
+      "oldPass": "Old password",
+      "newPass": "New password",
+      "againPass": "Again password"
+    },
+    "searchXe": {
+      "title": "search verhicle",
+      "content": "Verhicle information",
+      "table": {
+        "ID": "ID",
+        "VerhicleNumber": "VerhicleNumber",
+        "Money": "Money",
+        "VerhicleType": "VerhicleType",
+        "Customer": "Customer",
+        "NumberOfFrame": "NumberOfFrame",
+        "NumberOfMachine": "NumberOfMachine"
+      }
+    }
+  },
+  "more": "View more",
+  "submit": "Submit",
+  "update": "update",
+  "delete": "delete",
+  "insert": "insert",
+  "save": "Save",
+  "cancel": "Cancel",
+  "modify": "Modify"
+}
